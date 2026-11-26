@@ -45,3 +45,5 @@ lib/units.js    minor -> major units for balances
 - Crypto-only pairs start at 0.0001 BTC, 10 USDT or 10 USDC. NGN pairs start at ₦500 on the NGN side.
 - Crypto orders: look up by reference; never resend blindly. NGN orders: look up by id; resending the same reference returns the original order.
 - Balances are integer strings in minor units (sats, 6-decimal USDT/USDC, kobo).
+
+Test results from 26 Nov 2026 are in [TEST-RESULTS.md](TEST-RESULTS.md).
