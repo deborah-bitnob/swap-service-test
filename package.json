@@ -1,0 +1,24 @@
+{
+  "name": "swap-service",
+  "version": "1.0.0",
+  "description": "Test Bitnob swaps across BTC, USDT, USDC and NGN",
+  "main": "lib/swap.js",
+  "scripts": {
+    "check": "node --env-file=.env check.js",
+    "swap": "node --env-file=.env swap.js",
+    "reconcile": "node --env-file=.env reconcile.js",
+    "server": "node --env-file=.env server.js",
+    "test": "node --test test/unit.test.js",
+    "test:sandbox": "node --env-file=.env test/sandbox.js",
+    "test:endpoints": "node --env-file=.env test/endpoints.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^13.2.0",
+    "express": "^5.3.0"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=20.6"
+  }
+}
